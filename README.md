@@ -94,7 +94,7 @@ $ npm start
    1. npm i react-router-dom
    2. create route for home screen
    3. create router for product screen
-   # npm install react-router-dom
+   # frontend: npm install react-router-dom
 7. Create Node.JS Server
    1. run npm init in root folder
    2. Update package.json set type: module
@@ -108,9 +108,9 @@ $ npm start
    10. create route for /api/products
    11. return products
    12. run npm start
-   # npm init  , set type to "module"
-   # npm install express
-   # npm install nodemon --save-dev
+   # backend: npm init  , set type to "module"
+   # backend: npm install express
+   # backend: npm install nodemon --save-dev
 8. Fetch Products From Backend
    1. set proxy in package.json
    2. npm install axios
@@ -118,17 +118,17 @@ $ npm start
    4. use effect hook
    5. use reducer hook
    # set proxy in package.json to 5000
-   # npm install axios
+   # frontend: npm install axios
 9. Manage State By Reducer Hook
    1. define reducer
    2. update fetch data
    3. get state from usReducer
-   # npm install use-reducer-logger --force
+   # frontend: npm install use-reducer-logger --force
 10. Add bootstrap UI Framework
     1. npm install react-bootstrap bootstrap
     2. update App.js
-    # npm install react-bootstrap bootstrap
-    # npm install react-router-bootstrap
+    # frontend: npm install react-bootstrap bootstrap
+    # frontend: npm install react-router-bootstrap
 11. Create Product and Rating Component
     1. create Rating component
     2. Create Product component
@@ -137,7 +137,7 @@ $ npm start
 12. Create Product Details Screen
     1. fetch product from backend
     2. create 3 columns for image, info and action
-    # npm install react-helmet-async
+    # frontend: npm install react-helmet-async
 13. Create Loading and Message Component
     1. create loading component
     2. use spinner component
@@ -196,7 +196,7 @@ $ npm start
     1. handle submit action
     2. save token in store and local storage
     3. show user name in header
-    # npm i react-toastify
+    # frontend: npm i react-toastify
 24. Create Shipping Screen
     1. create form inputs
     2. handle save shipping address
@@ -250,6 +250,8 @@ $ npm start
     6. Set database connection in heroku env variables
     7. Commit and push
     # no longer free use Render.com instead
+    # EnvironmentVariable 1 JWT_SECRET=somethingsecret1234
+    # EnvironmentVariable 2 MONGODB_URI=mongodb+srv://amazona:amazona@cluster0.drksgq1.mongodb.net/EcommAmazon-app-db?retryWrites=true&w=majority
 34. Add Sidebar and Search Box
     1. add sidebar
     2. add search box
