@@ -80,7 +80,10 @@ $ npm start
 
 1. Introduction
 2. Install Tools
-3. Create React App
+# install node.js from website, install git from website
+3. Create React App 
+# npx create-react-app frontend
+# npm start 
 4. Create Git Repository
 5. List Products
    1. create products array
@@ -91,6 +94,7 @@ $ npm start
    1. npm i react-router-dom
    2. create route for home screen
    3. create router for product screen
+   # npm install react-router-dom
 7. Create Node.JS Server
    1. run npm init in root folder
    2. Update package.json set type: module
@@ -104,26 +108,36 @@ $ npm start
    10. create route for /api/products
    11. return products
    12. run npm start
+   # npm init  , set type to "module"
+   # npm install express
+   # npm install nodemon --save-dev
 8. Fetch Products From Backend
    1. set proxy in package.json
    2. npm install axios
    3. use state hook
    4. use effect hook
    5. use reducer hook
+   # set proxy in package.json to 5000
+   # npm install axios
 9. Manage State By Reducer Hook
    1. define reducer
    2. update fetch data
    3. get state from usReducer
+   # npm install use-reducer-logger --force
 10. Add bootstrap UI Framework
     1. npm install react-bootstrap bootstrap
     2. update App.js
+    # npm install react-bootstrap bootstrap
+    # npm install react-router-bootstrap
 11. Create Product and Rating Component
     1. create Rating component
     2. Create Product component
     3. Use Rating component in Product component
+    # in index.html href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" />
 12. Create Product Details Screen
     1. fetch product from backend
     2. create 3 columns for image, info and action
+    # npm install react-helmet-async
 13. Create Loading and Message Component
     1. create loading component
     2. use spinner component
@@ -154,22 +168,35 @@ $ npm start
     2. install local mongodb database
     3. npm install mongoose
     4. connect to mongodb database
+    # backend- npm install mongoose
+    # backend- npm install dotenv
+    # setup .env file
+    # if get error connect ECONNREFUSED 127.0.0.1:27017 change localhost word to 127.0.0.1
 20. Seed Sample Products
     1. create Product model
     2. create seed route
     3. use route in server.js
     4. seed sample product
+    # localhost:5000/api/seed
+    # in seedRoutes.js replace remove() with deleteMany()
+    # another correction on productRoutes.js
 21. Seed Sample Users
     1. create user model
-    2. seed sample users
+    2. seed sample user
+    # backend - npm i bcryptjs
+    # in seedRoutes.js replace remove() with deleteMany()
 22. Create Signin Backend API
     1. create signin api
     2. npm install jsonwebtoken
     3. define generateToken
+    # backend- npm install express-async-handler
+    # backend- npm install jsonwebtoken
+    # Advanced REST client. similar to Postman
 23. Complete Signin Screen
     1. handle submit action
     2. save token in store and local storage
     3. show user name in header
+    # npm i react-toastify
 24. Create Shipping Screen
     1. create form inputs
     2. handle save shipping address
@@ -201,10 +228,14 @@ $ npm start
     7. render paypal button
     8. implement onApprove payment function
     9. create pay order api in backend
+    # website developer.paypal.com/home, Dashboard, create PAYPAL_CLIENT_ID
+    # frontend: npm install @paypal/react-paypal-js
+    # fake user purchase
 31. Display Order History
     1. create order screen
     2. create order history api
     3. use api in the frontend
+    # forgot to import Button in OrderHistoryScreen.js
 32. Create Profile Screen
     1. get user info from context
     2. show user information
@@ -218,9 +249,11 @@ $ npm start
     5. Create mongodb atlas database
     6. Set database connection in heroku env variables
     7. Commit and push
+    # no longer free use Render.com instead
 34. Add Sidebar and Search Box
     1. add sidebar
     2. add search box
+    # app.js line 129 this code to={/search?category=${category}} change to this code => to={/search/category=${category}} 
 35. Create Search Screen
     1. show filters
     2. create api for searching products
